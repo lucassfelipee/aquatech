@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AquaTech</title>
+    <link rel="stylesheet" href="styleCadastro.css">
 </head>
-<body>
-    <h1>Estamos na pagina de cadastro</h1>
+ <body>
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo"> AquaTech</h1>
+            <ul class="navbar">
+              <a href="index.html">
+                <li> Inicial </li>
+              </a>  
+                
+                <a href="simulador.html">
+                    <li> Simulador </li>
+                </a>
+                
+                <li> | </li>
+                <a href="login.html">
+                    <li> Login </li> 
+             </a>
+            
+                <a href="./cadastro.html">
+                    <li> Cadastro </l>   
+                </a>
+               
+
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+    <div class="container">
+        <div class="painel">
+            <h1> Bem-vindo!</h1>
+            <span>Nome:</span>
+            <input type="text" id="ipt_nome" placeholder="Seu nome">
+            <span>E-mail:</span>
+            <input type="text" id="ipt_email" placeholder="meuemail@sptech.com"> 
+            <span>Senha:</span>
+            <input type="text" id="ipt_senha" placeholder="*****">
+            <span>Corfirmação da Senha:</span>
+            <input type="text" id="ipt_confirmar" placeholder="*****">
+
+            <button onclick="cadastro()"> cadastrar </button>
+            </div>
+        </div>
+    </div>  
+   
+</div>
 </body>
 </html>
+<script>
+    function cadastro(){
+        alert("Cadastro feito com sucesso. Seja Bem Vindo (a)!");
+        
+    }
+</script>
